@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
         <h1>IMDB TOP 100 MOVIES</h1>
-        <SearchBar />
+        {/* <SearchBar /> */}
     </div>
   )
 }
