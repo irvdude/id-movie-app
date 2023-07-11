@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../index.css';
 
 function MovieItem({ movie }) {
   if (!Array.isArray(movie)) {
@@ -7,8 +8,8 @@ function MovieItem({ movie }) {
   }
 
   return (
-    <div>
-      <ol>
+    <div className="loading">
+      <ol className="movie-list">
         {movie.map((movieItem) => (
           <li key={movieItem.id}>
             <NavLink to={`/movies/${movieItem.id}`} activeclassname="active">
